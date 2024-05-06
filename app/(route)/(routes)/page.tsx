@@ -1,14 +1,9 @@
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SearchInput } from "@/components/search-input";
 
 export default function Home() {
   return (
-    <div>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+    <div className="h-full p-4 space-y-2">
+      <SearchInput />
     </div>
   );
 }
