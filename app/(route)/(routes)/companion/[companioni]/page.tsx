@@ -1,23 +1,7 @@
-import prismadb from "@/lib/prismadb";
-
-interface CompanionIdPageProps {
-    params: {
-        companionId: string;
-    };
-};
-
-const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
-    // TOdo check subcription
-
-
-
-    const category = await prismadb.category.findMany();
-
+const CompanionId = () => {
     return (
-        <div className="">
-            Hello Companion Id
-        </div>
+        <div className="">COmpanion</div>
     );
 }
 
-export default CompanionIdPage;
+export default CompanionId;
